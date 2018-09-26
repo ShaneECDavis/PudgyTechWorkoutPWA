@@ -1,13 +1,26 @@
 {
-  "name": "react-app-rewire-workbox",
+  "name": "pudgytech",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.1.0",
+    "@material-ui/icons": "^3.0.1",
+    "@redux-offline/redux-offline": "^2.4.0",
+    "firebase": "^5.5.1",
     "json-server": "^0.14.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
-    "standard": "^11.0.1"
+    "react-webcam": "^1.0.4",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.7.2",
+    "redux-thunk": "^2.3.0",
+    "standard": "^11.0.1",
+    "typeface-roboto": "0.0.54"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -19,6 +32,7 @@
     "path": "^0.12.7",
     "prop-types": "^15.6.2",
     "react-app-rewired": "^1.5.2",
+    "remote-redux-devtools": "^0.5.13",
     "workbox-webpack-plugin": "^3.4.1"
   }
 }

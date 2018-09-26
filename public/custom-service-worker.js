@@ -6,9 +6,6 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-const bgSyncPlugin = new workbox.backgroundSync.Plugin('todoQueue', {
-  maxRetentionTime: 24 * 60
-});
 
 workbox.routing.registerRoute(
   /\.(?:js|css|html)$/,
@@ -20,16 +17,4 @@ workbox.routing.registerRoute(
   workbox.strategies.networkFirst()
 )
 
-workbox.routing.registerRoute(
-  'http://localhost:8000/todos',
-  workbox.strategies.networkFirst(),
-  'GET'
-)
 
-workbox.routing.registerRoute(
-  'http://localhost:8000/todos',
-  workbox.strategies.networkFirst({
-    plugins: [bgSyncPlugin]
-  }),
-  'POST'
-)
